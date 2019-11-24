@@ -39,7 +39,7 @@ After compilation, three executable files (`Likelihood`, `Detection` and `NclsPo
 
 Before running NP-SMLR,
 1. the reads have be aligned to reference genome; and
-2. the alignments between event signals and reference genome should be obtained using `nanopolish eventalign`.
+2. the alignments between event signals and reference genome should be obtained using `nanopolish eventalign`. Please make sure that the flag --print-names is set.
 
 The tutorial of `nanopolish eventalign` can be found at https://nanopolish.readthedocs.io/en/latest/quickstart_eventalign.html.
 
