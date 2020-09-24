@@ -128,4 +128,4 @@ For details, please read `NP-SMLR/License`.
 
 # Citation
 
-Yunhao Wang, Anqi Wang, Zujun Liu, Andrew L. Thurman, Linda S. Powers, Meng Zou, Yue Zhao, Adam Hefel, Yunyi Li, Joseph Zabner, Kin Fai Au. Single-molecule long-read sequencing reveals the chromatin basis of gene expression. *Genome Research*, 2019. doi: 10.1101/gr.251116.119
+Yunhao Wang*, Anqi Wang*, Zujun Liu, Andrew L. Thurman, Linda S. Powers, Meng Zou, Yue Zhao, Adam Hefel, Yunyi Li, Joseph Zabner, Kin Fai Au. Single-molecule long-read sequencing reveals the chromatin basis of gene expression. *Genome Research*, 2019. doi: 10.1101/gr.251116.119 (*contributed equally)
