@@ -7,8 +7,8 @@ The current version has been tested in the Linux system with:
 1. GCC (version 7.3.0);
 2. Perl (version 5.16.3);
 3. SAMtools (version 1.9);
-4. BEDtools (version 2.28.0).
-
+4. BEDtools (version 2.28.0);
+5. Boost (version 1.73.0).
 
 
 # Installation
@@ -16,10 +16,9 @@ The current version has been tested in the Linux system with:
 You can download and compile the latest version (v1.0) as follows:
 
 ```
-git clone https://github.com/Au-Lab/NP-SMLR.git
+git clone https://github.com/imatrm/NP-SMLR.git
 cd NP-SMLR
 make
-chmod +x NP-SMLR.pl
 ```
 
 After compilation, three executable files (`Likelihood`, `Detection` and `NclsPos`) will be generated in the folder `NP-SMLR/bin`.
@@ -27,9 +26,8 @@ After compilation, three executable files (`Likelihood`, `Detection` and `NclsPo
 
 **Please ensure that you have added**
 
-1. The folder `NP-SMLR/bin`
-2. `SAMtools`
-3. `BEDtools`
+1. `SAMtools`
+2. `BEDtools`
 
 **to your `PATH`.**
 
@@ -50,7 +48,7 @@ The tutorial of `nanopolish eventalign` can be found at https://nanopolish.readt
 The command is
 
 ```
-NP-SMLR.pl -b sorted_bam_file -e event_align_scale -o output_dir
+./NP-SMLR.pl -b sorted_bam_file -e event_align_scale -o output_dir
 ```
 
 * Parameters
@@ -64,7 +62,7 @@ NP-SMLR.pl -b sorted_bam_file -e event_align_scale -o output_dir
 The test example can be run using the command
 
 ```
-NP-SMLR.pl -b ./testdata/sort_test.bam -e ./testdata/eventalign_scale_test.txt -o output
+./NP-SMLR.pl -b ./testdata/sort_test.bam -e ./testdata/eventalign_scale_test.txt -o output
 ```
 
 The generated files are stored under `output`.
