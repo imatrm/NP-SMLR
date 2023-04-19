@@ -261,11 +261,9 @@ int main (int argc, char **argv) {
                 island_upper = ref_index + last_GpC_position + 1;
             }
             CalculateAndOutput(ref_name, IsFwd, ref_index, kmer, read_name, event_level, neg_para_map, pos_para_map);
-            //cout << strInput << endl;
         }
         else if(ref_index <= island_upper){
             CalculateAndOutput(ref_name, IsFwd, ref_index, kmer, read_name, event_level, neg_para_map, pos_para_map);
-            //cout << strInput << endl;
         }
     }
 
