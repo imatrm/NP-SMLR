@@ -109,7 +109,7 @@ map<string,POS_CTRL> BuildPositiveParameterMap (ifstream &inf) {
 }
 
 
-set<string> BuildFowardAlignSet (ifstream &inf) {
+set<string> BuildForwardAlignSet (ifstream &inf) {
 
     set<string> fwd_align_set;
 
@@ -206,7 +206,7 @@ int main (int argc, char **argv) {
 
     map<string,NEG_CTRL> neg_para_map = BuildNegativeParameterMap(neginf);
     map<string,POS_CTRL> pos_para_map = BuildPositiveParameterMap(posinf);
-    set<string> fwd_align_set = BuildFowardAlignSet(fwdaligninf);
+    set<string> fwd_align_set = BuildForwardAlignSet(fwdaligninf);
 
     map<string,NEG_CTRL>::iterator it_neg;
     map<string,POS_CTRL>::iterator it_pos;
@@ -261,11 +261,9 @@ int main (int argc, char **argv) {
                 island_upper = ref_index + last_GpC_position + 1;
             }
             CalculateAndOutput(ref_name, IsFwd, ref_index, kmer, read_name, event_level, neg_para_map, pos_para_map);
-            //cout << strInput << endl;
         }
         else if(ref_index <= island_upper){
             CalculateAndOutput(ref_name, IsFwd, ref_index, kmer, read_name, event_level, neg_para_map, pos_para_map);
-            //cout << strInput << endl;
         }
     }
 

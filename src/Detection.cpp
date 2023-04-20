@@ -92,8 +92,6 @@ int main (int argc, char **argv) {
         getline(inf, strInput);
         if(strInput.length() == 0)  break;
 
-        //cout << strInput << endl;
-
         if(strInput[0] == '~' || strInput[0] == '*'){
 
             if(likelihood_sum_map.size() > 0){
@@ -157,15 +155,12 @@ int main (int argc, char **argv) {
                 ++read_kmer_freq;
                 if(read_kmer_freq == FREQ_THRESH + 1){
                     too_many_set.insert(read_kmer);
-                    //cout << "TOO MANY" << endl;
                 }
             }
             else{
                 read_kmer_freq = 1;
                 pre_read_kmer = read_kmer;
             }
-
-            //cout << "read_kmer_freq = " << read_kmer_freq << endl;
 
             double likelihood_neg = lexical_cast<double>(vec[6]);
             double likelihood_pos = lexical_cast<double>(vec[7]);
